@@ -1,0 +1,952 @@
+/* Quitamos los márgenes por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fondo de toda la página */
+body {
+    background-color: #f1f3f5;
+    font-family: Arial, sans-serif;
+    color: #14233b;
+     width: 80%;
+    margin: 0 auto;
+    
+    zoom: 1.20;
+
+}
+
+
+/* CABECERA */
+header {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 25px;
+    gap: 10px;
+   
+}
+
+
+/* Foto */
+.foto {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background-color: #d9dde2;
+
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Título */
+.titulo {
+    min-width: 270px;
+}
+
+.titulo h1 {
+    font-size: 23px;
+    font-weight: bold;
+
+    color: #0d1b31;
+
+    margin-bottom: 4px;
+}
+
+.titulo p {
+    font-size: 11px;
+    color: #687386;
+}
+
+
+/* Animación */
+.animacion {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.animacion span {
+    font-size: 11px;
+    font-weight: bold;
+
+    color: #0d1b31;
+}
+
+.animacion input {
+    width: 85px;
+
+    cursor: pointer;
+}
+
+.animacion .rapida {
+    font-size: 11px;
+    font-weight: normal;
+
+    color: #687386;
+}
+
+
+/* Mostrar exploración */
+.exploracion {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 11px;
+
+    color: #475467;
+
+    white-space: nowrap;
+}
+
+.exploracion input {
+    cursor: pointer;
+}
+
+
+/* BOTONES */
+.btn {
+    border: none;
+    border-radius: 6px;
+
+    padding: 8px 13px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+/* Ejecutar */
+.ejecutar {
+    background-color: #123d75;
+    color: white;
+}
+
+
+/* Comparar todos */
+.comparar {
+    background-color: #123d75;
+    color: white;
+}
+
+
+/* Pausar */
+.pausar {
+    background-color: #ffffff;
+    color: #344054;
+
+    border: 1px solid #d9dde2;
+}
+
+
+/* Aleatorio */
+.aleatorio {
+    background-color: #ffffff;
+    color: #344054;
+
+    border: 1px solid #d9dde2;
+}
+
+
+/* Limpiar */
+.limpiar {
+    background-color: #f3dfe5;
+    color: #7d3547;
+}
+
+
+/* Estado */
+.estado {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #d9dde2;
+    border-radius: 20px;
+
+    background-color: #ffffff;
+
+    font-size: 11px;
+
+    color: #475467;
+
+    white-space: nowrap;
+}
+
+
+/* Punto verde */
+.punto {
+    width: 8px;
+    height: 8px;
+
+    background-color: #36a269;
+
+    border-radius: 50%;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+main {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 270px minmax(0, 1fr) 260px;
+
+    gap: 20px;
+
+    padding: 10px 0 25px;
+
+    align-items: start;
+    
+}
+
+
+/* =========================
+   PANEL IZQUIERDO
+   ========================= */
+
+.panel-izquierdo {
+    min-height: 650px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9dde2;
+    border-radius: 16px;
+
+    padding: 18px;
+}
+.panel-izquierdo label {
+    color: #0d1b31;
+    font-weight: bold;
+}
+
+
+/* Secciones */
+.seccion {
+    width: 100%;
+}
+
+
+/* Títulos de las secciones */
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.titulo-seccion h2 {
+    font-size: 14px;
+
+    color: #0d1b31;
+}
+
+.titulo-seccion span {
+    font-size: 9px;
+
+    color: #8a93a1;
+}
+
+
+/* Texto pequeño */
+.texto-label {
+    display: block;
+
+    font-size: 10px;
+
+    color: #0d1b31;
+
+    margin-bottom: 6px;
+}
+
+
+/* Selector */
+.selector {
+    width: 100%;
+
+    height: 35px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d9dde2;
+    border-radius: 7px;
+
+    background-color: #ffffff;
+
+    color: #344054;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* Descripción */
+.descripcion {
+    margin-top: 12px;
+
+    font-size: 9px;
+
+    line-height: 14px;
+
+    color: #7b8492;
+}
+
+
+/* Línea separadora */
+.linea {
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #e4e7eb;
+
+    margin: 18px 0;
+}
+
+
+/* =========================
+   ESCENARIOS
+   ========================= */
+
+.escenarios {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+}
+
+
+/* Botones de escenario */
+.escenario {
+    min-height: 50px;
+
+    padding: 8px;
+
+    border: 1px solid #d9dde2;
+    border-radius: 9px;
+
+    background-color: #f8f9fa;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.escenario strong {
+    display: block;
+
+    font-size: 10px;
+
+    color: #344054;
+
+    margin-bottom: 5px;
+}
+
+.escenario small {
+    display: block;
+
+    font-size: 8px;
+
+    color: #8a93a1;
+}
+
+
+/* =========================
+   DIBUJO
+   ========================= */
+
+.herramientas {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+
+/* Herramientas */
+.herramienta {
+    min-height: 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px;
+
+    border: 1px solid #d9dde2;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    font-size: 9px;
+
+    color: #475467;
+
+    cursor: pointer;
+}
+
+
+/* El último ocupa las dos columnas */
+.herramienta:last-child {
+    grid-column: auto;
+}
+
+
+/* Iconos */
+.icono {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/* Obstáculo */
+.obstaculo-icono {
+    background-color: #111111;
+
+    border-radius: 3px;
+}
+
+
+/* Borrar */
+.borrar-icono {
+    border: 1px solid #c8cdd4;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    color: #687386;
+}
+
+
+/* Inicio */
+.inicio-icono {
+    border-radius: 50%;
+
+    background-color: #35a267;
+
+    color: white;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+/* Meta */
+.meta-icono {
+    background-color: #f2994a;
+
+    transform: rotate(45deg);
+
+    font-size: 9px;
+    font-weight: bold;
+
+    color: #111111;
+}
+
+
+/* Peso */
+.peso-icono {
+    background-color: #cdb8e8;
+
+    border-radius: 3px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+
+/* Opciones de dibujo */
+.opciones-dibujo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+    margin-top: 15px;
+}
+
+.opcion:last-child {
+    grid-column: 1;
+}
+
+
+/* Cada opción */
+.opcion {
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.opcion label {
+    font-size: 9px;
+
+    color: #687386;
+}
+
+
+/* Inputs */
+.opcion input {
+    width: 110px;
+    height: 30px;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 6px;
+
+    padding: 5px;
+
+    font-size: 10px;
+
+    color: #344054;
+
+    background-color: #ffffff;
+}
+
+
+/* Texto final */
+.texto-final {
+    margin-top: 15px;
+
+    font-size: 9.5px;
+
+    line-height: 14px;
+
+    color: #7b8492;
+}
+
+
+/* =========================
+   ZONA CENTRAL
+   ========================= */
+
+.zona-central {
+    height: 740px;
+
+    min-width: 0;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9dde2;
+    border-radius: 16px;
+
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Cabecera del mapa */
+.cabecera-mapa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+
+/* Título del mapa */
+.cabecera-mapa h2 {
+    font-size: 18px;
+
+    color: #0d1b31;
+}
+
+
+/* Estado del mapa */
+.estado-mapa {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 6px 11px;
+
+    border: 1px solid #d9dde2;
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    color: #475467;
+}
+
+
+/* Punto verde del mapa */
+.punto-verde {
+    width: 8px;
+    height: 8px;
+
+    background-color: #35a267;
+
+    border-radius: 50%;
+}
+
+
+/* Descripción del mapa */
+.descripcion-mapa {
+    font-size: 11px;
+
+    line-height: 17px;
+
+    color: #687386;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CUADRÍCULA 20 x 20
+   ========================= */
+
+.cuadricula {
+    width: 100%;
+
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+    background-color: #ffffff;
+
+    border: 1px solid #cfd4da;
+}
+
+
+/* Cada casilla */
+.casilla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+
+    border-right: 1px solid #e1e5e9;
+    border-bottom: 1px solid #e1e5e9;
+
+    transition: background-color 0.08s;
+}
+.herramienta:hover,
+.escenario:hover,
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.herramienta,
+.escenario,
+.btn {
+    transition: 0.15s;
+}
+
+
+/* =========================
+   LEYENDA
+   ========================= */
+
+.leyenda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 64%;
+    font-size: 10px;
+    color: #475467;
+}
+
+
+/* Elementos de la leyenda */
+.elemento-leyenda {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+/* Inicio */
+.inicio {
+    width: 13px;
+    height: 13px;
+
+    background-color: #35a267;
+
+    border-radius: 3px;
+
+    display: inline-block;
+}
+
+
+/* Meta */
+.meta {
+    width: 13px;
+    height: 13px;
+
+    background-color: #f2994a;
+
+    transform: rotate(45deg);
+
+    display: inline-block;
+}
+
+
+/* Obstáculo */
+.obstaculo {
+    width: 13px;
+    height: 13px;
+
+    background-color: #111111;
+
+    border-radius: 3px;
+
+    display: inline-block;
+}
+
+
+/* Peso */
+.peso {
+    width: 13px;
+    height: 13px;
+
+    background-color: #cdb8e8;
+
+    border-radius: 3px;
+
+    display: inline-block;
+}
+
+
+/* Explorado */
+.explorado {
+    width: 13px;
+    height: 13px;
+
+    background-color: #9bd7ec;
+
+    border-radius: 3px;
+
+    display: inline-block;
+}
+
+
+/* Ruta final */
+.ruta-final {
+    width: 13px;
+    height: 13px;
+
+    background-color: #f2994a;
+
+    border-radius: 3px;
+
+    display: inline-block;
+}
+
+
+/* =========================
+   PANEL DERECHO
+   ========================= */
+
+.panel-derecho {
+    min-height: 500px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* Título del panel derecho */
+.titulo-derecho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4px;
+}
+
+.titulo-derecho h2 {
+    font-size: 14px;
+
+    color: #0d1b31;
+}
+
+.titulo-derecho span {
+    font-size: 9px;
+
+    color: #8a93a1;
+}
+
+
+/* Bloques derechos */
+.bloque-derecho {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #f7f8f9;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 10px;
+}
+
+.bloque-derecho h3 {
+    font-size: 10px;
+
+    color: #344054;
+
+    margin-bottom: 7px;
+}
+
+.bloque-derecho p {
+    font-size: 9px;
+
+    line-height: 14px;
+
+    color: #7b8492;
+}
+
+
+/* Filas de resultados */
+.fila-resultados {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+
+/* Resultado */
+.resultado {
+    min-height: 65px;
+
+    padding: 11px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 10px;
+}
+
+.resultado span {
+    display: block;
+
+    font-size: 9px;
+
+    color: #8a93a1;
+
+    margin-bottom: 7px;
+}
+
+.resultado strong {
+    font-size: 18px;
+
+    color: #123d75;
+}
+
+
+/* Bloques grandes */
+.bloque-grande {
+    min-height: 105px;
+}
+
+#comparacion {
+    width: 100%;
+
+    margin-bottom: 25px;
+    padding: 18px;
+
+    background-color: white;
+
+    border: 1px solid #d9dde2;
+    border-radius: 16px;
+}
+
+#comparacion h3 {
+    font-size: 14px;
+    color: #0d1b31;
+
+    margin-bottom: 12px;
+}
+
+#comparacion p {
+    font-size: 10px;
+    color: #475467;
+
+    margin-bottom: 7px;
+}
+
+.fila-comparacion {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: #f7f8fa;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #475467;
+}
+
+.fila-comparacion strong {
+    width: 100px;
+    color: #0d1b31;
+}
+
+.fila-comparacion span {
+    min-width: 120px;
+}

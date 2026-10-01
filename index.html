@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratorio de rutas</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+
+<body>
+
+    <!-- CABECERA -->
+    <header>
+
+        <div class="foto">
+            <img src="logo.jpg" alt="Foto">
+        </div>
+
+        <div class="titulo">
+            <h1>Laboratorio de rutas</h1>
+            <p>Explora los algoritmos de búsqueda en una cuadrícula 20 x 20</p>
+        </div>
+
+        <div class="animacion">
+            <span>ANIMACIÓN</span>
+
+            <input type="range" min="1" max="100" value="50">
+
+            <span class="rapida">Rápida</span>
+        </div>
+
+        <label class="exploracion">
+            <input type="checkbox">
+            Mostrar exploración
+        </label>
+
+        <button class="btn ejecutar">Ejecutar</button>
+
+        <button class="btn comparar">Comparar todos</button>
+    
+
+        <button class="btn pausar">|| Pausar</button>
+
+        <button class="btn aleatorio">+ Aleatorio</button>
+
+        <button class="btn limpiar">Limpiar</button>
+
+        <div class="estado">
+            <span class="punto"></span>
+            Listo para dibujar
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+
+        <!-- PANEL IZQUIERDO -->
+        <section class="panel-izquierdo">
+
+            <!-- ALGORITMO -->
+            <div class="seccion">
+
+                <div class="titulo-seccion">
+                    <h2>ALGORITMO</h2>
+                    <span>para ejecutar</span>
+                </div>
+
+                <label class="texto-label">
+                    Método de búsqueda
+                </label>
+
+                <select class="selector">
+    <option>BFS - Búsqueda en anchura</option>
+    <option>DFS - Búsqueda en profundidad</option>
+    <option>Coste uniforme</option>
+    <option>A* - Búsqueda heurística</option>
+</select>
+
+                <p class="descripcion">
+                    Explora por niveles y encuentra la meta a menos pasos. No tiene en cuenta los pesos de las baldosas.
+                    
+                    
+                </p>
+                <p class="descripcion">
+                    
+                    Criterio: primera meta menor numero de pasos. Los pesos y el coste de meta se muestran como metricas, 
+                    pero no cambian la eleccion.
+                </p>
+
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <!-- ESCENARIOS -->
+            <div class="seccion">
+
+                <div class="titulo-seccion">
+                    <h2>ESCENARIOS</h2>
+                    <span>para comparar</span>
+                </div>
+
+                <div class="escenarios">
+
+                    <button class="escenario">
+                        <strong>Menos pasos</strong>
+                        <small>Sin pesos</small>
+                    </button>
+
+                    <button class="escenario">
+                        <strong>Pesos</strong>
+                        <small>Atajo caro</small>
+                    </button>
+
+                    <button class="escenario">
+                        <strong>Metas con coste</strong>
+                        <small>Cerca no siempre es mejor</small>
+                    </button>
+
+                    <button class="escenario">
+                        <strong>Sin solución</strong>
+                        <small>Barrera completa</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <!-- DIBUJO -->
+            <div class="seccion">
+
+                <div class="titulo-seccion">
+                    <h2>DIBUJO</h2>
+                    <span>arrastrar sobre la cuadrícula</span>
+                </div>
+
+
+                <div class="herramientas">
+
+                    <button class="herramienta">
+                        <span class="icono obstaculo-icono"></span>
+                        <span>Obstáculo</span>
+                    </button>
+
+                    <button class="herramienta">
+                        <span class="icono borrar-icono">×</span>
+                        <span>Borrar</span>
+                    </button>
+
+                    <button class="herramienta">
+                        <span class="icono inicio-icono">S</span>
+                        <span>Inicio</span>
+                    </button>
+
+                    <button class="herramienta">
+                        <span class="icono meta-icono">M</span>
+                        <span>Meta</span>
+                    </button>
+
+                    <button class="herramienta">
+                        <span class="icono peso-icono">×</span>
+                        <span>Peso</span>
+                    </button>
+
+                </div>
+
+
+                <div class="opciones-dibujo">
+
+                    <div class="opcion">
+
+                        <label>Peso de baldosa</label>
+
+                        <input type="number" value="1">
+
+                    </div>
+
+
+                    <div class="opcion">
+
+                        <label>Coste de la meta</label>
+
+                        <input type="number" value="1">
+
+                    </div>
+
+
+                    <div class="opcion">
+
+                        <label>Número de metas</label>
+
+                        <input type="number" value="1">
+
+                    </div>
+
+                </div>
+
+
+                <p class="texto-final">
+                    Con Peso, pinta baldosas blancas: el numero es el coste de entrar en ellas (1 es normal). UCS y A* lo usan; BFS y DFS lo ignoran. El coste de meta es una penalizacion opcional.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ZONA CENTRAL -->
+        <section class="zona-central">
+
+            <div class="cabecera-mapa">
+
+                <h2>Mapa 20 x 20</h2>
+
+                <div class="estado-mapa">
+                    <span class="punto-verde"></span>
+                    Escenario preparado
+                </div>
+
+            </div>
+
+            <div class="descripcion-mapa">
+                Herramienta activa: obstáculo, haz click o arrastra para pintar
+                <br>
+                Haz click o arrastra para editar la cuadrícula
+            </div>
+
+
+            <!-- AQUÍ DESPUÉS JAVASCRIPT CREARÁ LAS 400 CASILLAS -->
+            <div class="cuadricula">
+            </div>
+
+
+            <div class="leyenda">
+
+                <div class="elemento-leyenda">
+                    <span class="inicio"></span>
+                    Inicio
+                </div>
+
+                <div class="elemento-leyenda">
+                    <span class="meta"></span>
+                    Meta
+                </div>
+
+                <div class="elemento-leyenda">
+                    <span class="obstaculo"></span>
+                    Obstáculo
+                </div>
+
+                <div class="elemento-leyenda">
+                    <span class="peso"></span>
+                    Baldosa con peso
+                </div>
+
+                <div class="elemento-leyenda">
+                    <span class="explorado"></span>
+                    Explorado
+                </div>
+
+                <div class="elemento-leyenda">
+                    <span class="ruta-final"></span>
+                    Ruta final
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PANEL DERECHO -->
+        <section class="panel-derecho">
+
+            <!-- TÍTULO -->
+            <div class="titulo-derecho">
+                <h2>MÉTRICAS</h2>
+                <span>última ejecución</span>
+            </div>
+
+
+            <!-- ESTADO -->
+          <div class="bloque-derecho estado-bloque">
+    <h3>Estado</h3>
+    <strong id="estadoTexto">--</strong>
+</div>
+
+<div class="fila-resultados">
+
+    <div class="resultado">
+        <span>Exploradas</span>
+        <strong id="exploradas">--</strong>
+    </div>
+
+    <div class="resultado">
+        <span>Pasos</span>
+        <strong id="pasos">--</strong>
+    </div>
+
+</div>
+
+<div class="fila-resultados">
+
+    <div class="resultado">
+        <span>Coste ruta</span>
+        <strong id="costeRuta">--</strong>
+    </div>
+
+    <div class="resultado">
+        <span>Coste meta</span>
+        <strong id="costeMeta">--</strong>
+    </div>
+
+</div>
+
+<div class="bloque-derecho coste-total">
+    <h3>Coste total</h3>
+    <strong id="costeTotal">--</strong>
+</div>
+
+
+            <!-- A ESTRELLA -->
+            <div class="bloque-derecho heuristica">
+    <h3 id="tituloCriterio">BFS · Búsqueda en anchura</h3>
+    <p id="textoCriterio">
+        Explora las casillas por niveles y busca una ruta con el menor número de pasos.
+    </p>
+</div>
+
+        </section>
+
+    </main>
+    <div id="comparacion"></div>
+
+    <script src="algoritmos.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
