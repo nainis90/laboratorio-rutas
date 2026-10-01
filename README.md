@@ -236,7 +236,7 @@ Hay un camino corto con casillas de coste alto y otro camino más largo con meno
 
 Sirve para comparar pasos y coste total.
 
-![Atajo caro](/atajocaro.png)
+![Atajo caro](/img/atajocaro.png)
 
 ---
 
