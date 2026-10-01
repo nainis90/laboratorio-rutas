@@ -51,7 +51,7 @@ Para explicarle mejor la idea a la IA hice un pequeño dibujo en **Paint**, dond
 
 La idea principal era tener un encabezado, los controles y debajo la cuadrícula de 20 x 20.
 
-![estructura en paint](/imagen1.png)
+![estructura en paint](/img/imagen1.png)
 
 ---
 
@@ -118,7 +118,7 @@ Una de las partes que tuve que ir corrigiendo fue que se pueda visualizar la bú
 Se fueron haciendo correcciones hasta conseguir que las casillas exploradas se vean mientras se ejecuta.
 
 
-![busqueda](/busqueda.png)
+![busqueda](/img/busqueda.png)
 
 
 Una de las partes que más fui ajustando fue el tamaño y algunas proporciones de la página, para que la cuadrícula y los controles esten bien colocados.
@@ -226,7 +226,7 @@ No se utilizan pesos y se ponen obstáculos para crear diferentes caminos.
 
 Y sirve para comprobar la búsqueda con diferente número de pasos.
 
-![Menos pasos](/menospasos.png)
+![Menos pasos](/img/menospasos.png)
 
 ---
 
@@ -246,7 +246,7 @@ Hay varias metas. Una está más cerca pero tiene un coste mayor, mientras que o
 
 Sirve para comprobar cómo se tienen en cuenta los pasos y los costes.
 
-![Metas coste](/metascoste.png)
+![Metas coste](/img/metascoste.png)
 
 ---
 
@@ -256,7 +256,7 @@ Se coloca una barrera que impide llegar desde el inicio hasta la meta.
 
 Los cuatro algoritmos deben indicar que no existe una ruta.
 
-![sinsolucion](/sinsolucion.png)
+![sinsolucion](/img/sinsolucion.png)
 
 ---
 
@@ -294,7 +294,7 @@ Los resultados dicen que los algoritmos no buscan lo mismo.
 
 Aqui una muestra de la comparacion con el escenario de Menos datos.
 
-![comparacion](/comparacion.png)
+![comparacion](/img/comparacion.png)
 
 ---
 
@@ -315,7 +315,7 @@ Aqui una muestra de la comparacion con el escenario de Menos datos.
 
 Se realizó una prueba si no hay inicio ni una meta, lo cual aparecerá un aviso diciendo que falta el inicio
 
-![faltainicio](/faltainicio.png)
+![faltainicio](/img/faltainicio.png)
 
 ---
 
@@ -351,7 +351,7 @@ Durante el proceso fui indicando cambios cuando algo no quedaba como quería, co
 
 Mis peticiones a la IA son más o menos siempre el mismo, le digo mi objetivo y le digo que sea super entendible, directo, y simple, asi poder entender de la mejor manera las soluciones.
 
-![Uso de IA](/usoia.png)
+![Uso de IA](/img/usoia.png)
 
 ## 12.1 Ejemplos de consultas representativas:
 
