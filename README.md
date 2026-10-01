@@ -401,8 +401,8 @@ Con esto se puede ver que cada algoritmo utiliza una forma diferente de buscar u
 
 ### GitHub
 
-**[AÑADIR AQUÍ EL ENLACE AL REPOSITORIO DE GITHUB]**
+https://github.com/nainis90/laboratorio-rutas
 
 ### Netlify
 
-**[AÑADIR AQUÍ EL ENLACE DE LA PÁGINA PUBLICADA EN NETLIFY]**
+https://laboratorio-rutas-byron-calderon.netlify.app/
