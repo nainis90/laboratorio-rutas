@@ -34,7 +34,7 @@ let posicionRuta = 0;
 
 let tiempoInicio = 0;
 
-let mostrarExploracion = false;
+let mostrarExploracion = true;
 
 let algoritmoActual = "";
 
