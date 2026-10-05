@@ -640,8 +640,7 @@ main {
 
 .cuadricula {
     width: 100%;
-
-    flex: 1;
+    aspect-ratio: 1 / 1;
 
     display: grid;
 
