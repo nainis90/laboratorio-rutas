@@ -328,34 +328,34 @@ function pintarCasilla(numero) {
 
 
     // =========================
-    // PESO
-    // =========================
+// PESO
+// =========================
 
-    if (herramienta == "peso") {
+if (herramienta == "peso") {
 
-        if (!obstaculos[numero] &&
-            numero != numeroInicio &&
-            !esMetaNumero(numero)) {
+    if (!obstaculos[numero] &&
+        numero != numeroInicio &&
+        !esMetaNumero(numero)) {
 
-            let inputPeso =
-                document.querySelectorAll(
-                    ".opcion input"
-                )[0];
+        let inputPeso =
+            document.querySelectorAll(
+                ".opcion input"
+            )[0];
 
-            let pesoElegido =
-                parseInt(inputPeso.value);
+        let pesoElegido =
+            parseInt(inputPeso.value);
 
-            if (pesoElegido < 1) {
-                pesoElegido = 1;
-            }
-
-            pesos[numero] =
-                pesoElegido;
+        if (pesoElegido < 2) {
+            pesoElegido = 2;
         }
+
+        pesos[numero] =
+            pesoElegido;
     }
+}
 
 
-    actualizarCuadricula();
+actualizarCuadricula();
 }
 
 
